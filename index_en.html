@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+  <html lang="ro">
+    <head>
+    <meta charset="UTF-8">
+    <title>Optical access card generator</title>
+    <link rel="stylesheet" href="resources/style.css">
+    </head>
+    <body>
+    <div class="card">
+      <h2>Electra optical card generator</h2>
+
+      <label class="label">Numerical code (under the text "ELECTRA" on the original card)</label>
+      <input type="number" id="numCode" value="1234" placeholder="Type the code here..."> 
+
+      <label class="label">Binary code (reference)</label>
+      <input type="text" id="binCode" value="10101011101" disabled="true" placeholder="Here the binary code will appear">
+
+      <label class="label" style="text-align: center; display: block; margin-top: 10px;">Preview</label>
+      <div class="preview-wrapper">
+        <div class="preview" id="preview"></div>
+      </div>
+
+      <button onclick="downloadSTL()">Download 3D model (.stl)</button>
+
+      <p style="font-size: 11px; color: #5d5b5b; text-align: center;">12-bit (4 digit) cards are tested and working. 14-bit (5 digits) probably don't work.</p>
+
+      <p style="font-size: 11px; color: #5d5b5b; text-align: center;">This website does not use cookies and does not collect personal data. Everything happens in your browser.</p>
+
+      <p style="font-size: 11px; color: #5d5b5b; text-align: center;">By using this generator you accept the <a href="terms_en.html">Terms of Service</a></p>
+
+      <p style="font-size: 11px; color: #5d5b5b; text-align: center;"><a href="index.html">Switch to Romanian language</a></p>
+      <script src="resources/main.js"></script>
+    </body>
+</html>
